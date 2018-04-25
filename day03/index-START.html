@@ -16,6 +16,9 @@
 
     <label for="base">Base Color</label>
     <input id="base" type="color" name="base" value="#ffc600">
+
+    <label for="font-size">JS - Font Size</label>
+    <input id="font-size" type="range" name="fontsize" min="30" max="120" value="40" data-name="Font-Size" data-sizing="px">
   </div>
 
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
@@ -26,6 +29,7 @@
       --spacing: 10px;
       --base: yellow;
       --blur: 10px;
+      --fontsize: 30px;
     }
 
     img{
@@ -36,6 +40,7 @@
 
     .hl{
       color: var(--base);
+      font-size: var(--fontsize);
     }
     /*
       misc styles, nothing to do with CSS variables
@@ -68,7 +73,8 @@
       console.log(suffix)
     }
 
-    inputs.forEach( input => input.addEventListener('change', handleUpdate));
+    inputs.forEach( input => {
+      input.addEventListener('change', handleUpdate);    });
     inputs.forEach( input => input.addEventListener('mousemove', handleUpdate));
 
   </script>
