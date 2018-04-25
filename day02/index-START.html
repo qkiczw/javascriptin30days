@@ -70,13 +70,23 @@
   <script>
 
     const secondHand = document.querySelector('.second-hand')
+    const minuteHand = document.querySelector('.min-hand')
+    const hourHand = document.querySelector('.hour-hand')
+
 
     setDate = () => {
       const date = new Date();
       const seconds = date.getSeconds();
+      const minutes = date.getMinutes();
+      const hour = date.getHours();
       const getDegressFromSeconds = ((seconds / 60) * 360) + 90;
+      const getDegressFromMinutes = ((minutes / 60) * 360) + 90 ;
+      const getDegressFromHour = ((hour / 12) * 360) + 90;
       secondHand.style.transform = `rotate(${getDegressFromSeconds}deg)`;
-      console.log(seconds, getDegressFromSeconds);
+      minuteHand.style.transform = `rotate(${getDegressFromMinutes}deg)`;
+      hourHand.style.transform = `rotate(${getDegressFromHour}deg)`;
+
+      console.log(hour, minutes, seconds);
     }
 
     setInterval(setDate, 1000);
