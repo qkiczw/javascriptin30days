@@ -31,20 +31,68 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    const getBornIn = inventors.filter( (inventor) => {
+      if(inventor.year >= 1500 && inventor.year <= 1599) {
+        return true;
+      }
+    })
+    console.log(getBornIn);
+
+    const getPassedInventorsAfter1900 = inventors.filter( inventor =>  inventor.passed >= 1900 )
+    console.log(getPassedInventorsAfter1900);
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
 
+    const getInventorNames = inventors.map( (inventor) => {
+      return {
+        name: inventor.first,
+        lastName: inventor.last
+      }
+    })
+    console.log(getInventorNames)
+
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+
+    const getSortByBirthdate = inventors.sort( (firstInventor, secondInventor) => 
+      // if (firstInventor.year > secondInventor.year){
+      //   return 1;
+      // } else {
+      //   return -1;
+      // }
+
+    firstInventor.year > secondInventor.year ? 1 : -1
+    )
+    console.log(getSortByBirthdate)
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
 
+    const getInventorsTotalYears = inventors.reduce( (total, inventor) => {
+      return total + (inventor.passed - inventor.year) ;
+    }, 0) 
+
+    console.log(`They Live ${getInventorsTotalYears}`)
+
     // 5. Sort the inventors by years lived
+
+    const oldest = inventors.sort( (a,b) => {
+      const lastGuy = a.passed - a.year;
+      const nextGuy = b.passed - b.year;
+      return lastGuy > nextGuy ? -1 : 1;
+    })
+
+    console.log(oldest)
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+    const category = document.querySelector('.mw-category');
+    const links = [...category.querySelectorAll('a')]; // spread operator give me table from this category.query!!!
+    const de = links
+                .map( link => link.textContent)
+                .filter( streetName => streetName.includes('de'))
 
 
     // 7. sort Exercise
