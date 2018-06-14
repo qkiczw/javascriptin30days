@@ -12,3 +12,4 @@
 08. Day eight (HTML5 canvas) is finished.
 09. Day nine (DEV tools) is complete.
 10. Day ten (multiple checkboxes) is done.
+11. Day eleven (Custom HTML5 video player) is done.
