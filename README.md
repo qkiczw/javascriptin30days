@@ -14,3 +14,4 @@
 10. Day ten (multiple checkboxes) is done.
 11. Day eleven (Custom HTML5 video player) is done.
 12. Day twelve (Conami Code - Key sequence detection) is complete.
+13. Day Thirteen (Sliding images on sroll) is finished.
