@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+  <Style>
+  .ludzik{
+    position: relative
+  }
+  </Style>
+  <div class="ludzik" >Ludzik</div>
+<script>
+  const pressed = [];
+  const sercretCode = 'wesbos';
+
+  window.addEventListener('keyup', (e)=> {
+    console.log(e.key);
+    pressed.push(e.key);
+    pressed.splice(-sercretCode.length -1, pressed.length - sercretCode.length)
+    console.log(pressed);
+    if(pressed.join('').includes(sercretCode)) {
+      console.log('DING DING');
+      cornify_add();
+    }
+    
+  })
+</script>
+</body>
+</html>
