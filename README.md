@@ -16,3 +16,4 @@
 12. Day twelve (Conami Code - Key sequence detection) is complete.
 13. Day Thirteen (Sliding images on sroll) is finished.
 14. Day Fourteen (Reference vs copy) is done.
+15. Day Fifteen (LocalStorage and Event Delegation) is complete.
