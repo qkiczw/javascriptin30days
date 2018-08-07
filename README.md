@@ -17,3 +17,4 @@
 13. Day Thirteen (Sliding images on sroll) is finished.
 14. Day Fourteen (Reference vs copy) is done.
 15. Day Fifteen (LocalStorage and Event Delegation) is complete.
+16. Day Sixteen (Mouse Move Shadow) is done.
