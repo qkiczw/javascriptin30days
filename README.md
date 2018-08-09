@@ -18,3 +18,4 @@
 14. Day Fourteen (Reference vs copy) is done.
 15. Day Fifteen (LocalStorage and Event Delegation) is complete.
 16. Day Sixteen (Mouse Move Shadow) is done.
+17. Day Seventeen (Sorting without articles) is complete.
