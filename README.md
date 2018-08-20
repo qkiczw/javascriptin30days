@@ -19,3 +19,4 @@
 15. Day Fifteen (LocalStorage and Event Delegation) is complete.
 16. Day Sixteen (Mouse Move Shadow) is done.
 17. Day Seventeen (Sorting without articles) is complete.
+18. Day Eighteen (Tally String Times with Reduce) is done.
